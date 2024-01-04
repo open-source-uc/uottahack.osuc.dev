@@ -1,7 +1,21 @@
-# create-svelte
+# uottahack.osuc.dev
 
-- User
-- Profile (user_id)
-- Events
-- Teams (event_id, name)
-- Participants (team_id, user_id, is_captain)
+## Stack
+- [Emmy.js](https://emmyjs.github.io/)
+
+## Getting Started
+1. Clona el repositorio
+2. Instala las dependencias
+```bash
+npm install
+```
+3. Corre el servidor
+```bash
+npm run dev
+```
+4. Abre [http://localhost:5173](http://localhost:5173) con tu navegador para ver el resultado.
+
+## Build
+```bash
+npm run build
+```

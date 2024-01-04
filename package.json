@@ -1,44 +1,24 @@
 {
-	"name": "codefest-uc-2023-2",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --plugin-search-dir . --check .",
-		"format": "prettier --plugin-search-dir . --write .",
-		"gen:db-types": "supabase gen types typescript --linked > src/lib/supabase/types.ts"
-	},
-	"devDependencies": {
-		"@chientrm/adapter-cloudflare": "^2.3.4",
-		"@melt-ui/pp": "^0.0.7",
-		"@melt-ui/svelte": "^0.27.3",
-		"@supabase/auth-helpers-sveltekit": "^0.10.1",
-		"@supabase/supabase-js": "^2.29.0",
-		"@sveltejs/adapter-cloudflare": "^2.3.3",
-		"@sveltejs/adapter-vercel": "^3.0.3",
-		"@sveltejs/kit": "^1.20.4",
-		"@tailwindcss/forms": "^0.5.4",
-		"@types/pg": "^8.10.2",
-		"autoprefixer": "^10.4.14",
-		"kysely": "^0.26.1",
-		"pg": "^8.11.3",
-		"pg-cloudflare": "^1.1.1",
-		"postcss": "^8.4.27",
-		"prettier": "^2.8.0",
-		"prettier-plugin-svelte": "^2.10.1",
-		"svelte": "^4.0.5",
-		"svelte-check": "^3.4.3",
-		"svelte-sequential-preprocessor": "^2.0.1",
-		"sveltekit-superforms": "^1.5.0",
-		"tailwindcss": "^3.3.5",
-		"tslib": "^2.4.1",
-		"typescript": "^5.0.0",
-		"vite": "^4.4.2",
-		"zod": "^3.21.4"
-	},
-	"type": "module"
+  "name": "uottahack-uc-2024-1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run prerender && vite",
+    "build": "npm run prerender && vite build",
+    "preview": "vite preview",
+    "prerender": "node prerender.js"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "0.5.7",
+    "@tailwindcss/typography": "0.5.10",
+    "autoprefixer": "10.4.16",
+    "postcss": "8.4.32",
+    "standard": "17.1.0",
+    "tailwindcss": "3.4.0",
+    "vite": "5.0.8"
+  },
+  "dependencies": {
+    "emmy-dom": "0.1.2"
+  }
 }
