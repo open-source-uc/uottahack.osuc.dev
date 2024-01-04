@@ -33,6 +33,7 @@ export function app () {
         Durante 36 horas, podrás colaborar en proyectos innovadores, asistir a talleres educativos, establecer contactos con empresas y competir en desafíos que invitan a la reflexión.
       </p>  
     </section>
+    <Gallery></Gallery>
   `
 }
 
