@@ -29,6 +29,7 @@ build({
   generators: { signup },
   dependencies: javascript`
     import { load, html } from 'emmy-dom'
+    import { signUpNewUser } from './services/client.js'
   `,
   path: 'signup.html'
 })

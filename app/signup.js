@@ -12,9 +12,8 @@ export function signup () {
       e.preventDefault()
       setEmail(e.target[0].value)
       setPassword(e.target[1].value)
-      await signUpNewUser(email, password)
+      await signUpNewUser(email(), password())
     })
-    console.log('didMount')
   }, ['didMount'])
 
   return html`
