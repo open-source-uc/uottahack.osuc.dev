@@ -1,5 +1,4 @@
 import { load, html } from 'emmy-dom/dist/server.js'
-import { signUpNewUser } from './services/client.js'
 
 export function signup () {
   this.className = 'flex flex-col justify-center items-center text-center w-full h-fit text-gray-800 gap-0'
