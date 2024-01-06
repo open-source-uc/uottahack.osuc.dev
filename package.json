@@ -19,6 +19,7 @@
     "vite": "5.0.8"
   },
   "dependencies": {
+    "@supabase/supabase-js": "2.39.2",
     "emmy-dom": "0.1.2"
   }
 }
