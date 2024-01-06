@@ -18,7 +18,10 @@ export function app () {
           uOttaHack 6 UC
         </h1>
         <p class="text-2xl md:text-4xl">
-          1 a 3 de marzo, Campus San Joaquín UC
+          Campus San Joaquín UC
+        </p>
+        <p class="text-2xl md:text-4xl font-bold">
+          1 - 3 de Marzo
         </p>
         <button id="cta" class="bg-[#384DBF] text-white text-2xl md:text-4xl px-4 py-2 rounded-lg drop-shadow-lg w-[fit-content]">
           Ver más
@@ -34,6 +37,7 @@ export function app () {
         Durante 36 horas, podrás colaborar en proyectos innovadores, asistir a talleres educativos, establecer contactos con empresas y competir en desafíos que invitan a la reflexión.
       </p>  
     </section>
+    <h2 id="gallery" class="text-4xl font-bold font-['Harabara'] text-[#384DBF] mb-4">Eventos anteriores</h2>
     <Gallery></Gallery>
   `
 }
