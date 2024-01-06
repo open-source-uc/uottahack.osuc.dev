@@ -5,7 +5,7 @@ export function gallery () {
   const srcs = []
   const uottahackImgs = [1, 2, 3, 4]
   uottahackImgs.forEach(i => {
-    srcs.push(`pics/uottahack5_${i}.png`)
+    srcs.push(`pics/uottahack5_${i}.webp`)
   })
   const hackathonImgs = [1, 2]
   hackathonImgs.forEach(i => {
