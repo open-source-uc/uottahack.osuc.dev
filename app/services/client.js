@@ -1,7 +1,10 @@
 import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = process.env.SUPABASE_PUBLIC_URL
-const supabaseKey = process.env.SUPABASE_ANON_PUBLIC_KEY
+const supabaseUrl = import.meta.env.VITE_SUPABASE_PUBLIC_URL
+const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_PUBLIC_KEY
+
+console.log(typeof supabaseUrl, typeof supabaseKey)
+
 export const client = createClient(supabaseUrl, supabaseKey)
 
 export async function signUpNewUser (email, password) {
@@ -9,11 +12,11 @@ export async function signUpNewUser (email, password) {
     email,
     password,
     options: {
-      emailRedirectTo: 'https//example.com/welcome'
+      emailRedirectTo: 'https://uottahack-osuc-dev.vercel.app/'
     }
   })
   if (error) {
-    console.log(error)
+    console.error(error)
     return
   }
   return data
