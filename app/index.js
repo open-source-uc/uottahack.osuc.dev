@@ -20,10 +20,9 @@ export function app () {
         <p class="text-2xl md:text-4xl">
           1 a 3 de marzo, Campus San Joaquín UC
         </p>
-        <!--
         <button id="cta" class="bg-[#384DBF] text-white text-2xl md:text-4xl px-4 py-2 rounded-lg drop-shadow-lg">
           Ver más
-        </button>-->
+        </button>
       </article>
     </section>
     <section class="h-screen w-screen flex flex-col justify-center items-center gap-4">
