@@ -19,6 +19,7 @@ build({
   generators: { login },
   dependencies: javascript`
     import { load, html } from 'emmy-dom'
+    import { signInWithEmail } from './app/services/client.js'
   `,
   path: 'login.html'
 })
